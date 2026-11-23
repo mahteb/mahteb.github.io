@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>QuickBite Case Study — Mahteb Negussie</title>
+<meta name="description" content="QuickBite: a campus food pre-order app. Students order during class and collect when their break starts. Case study by Mahteb Negussie.">
+<meta property="og:title" content="QuickBite — campus food pre-order app">
+<meta property="og:description" content="From a 46-student survey to a working prototype and a 5-year business plan.">
+<meta property="og:image" content="img/qb-student.webp">
+<meta name="theme-color" content="#15202b">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%2315202b'/%3E%3Ctext x='32' y='42' font-family='monospace' font-size='28' font-weight='700' fill='%23f6f5f1' text-anchor='middle'%3EMN%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="theme.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="index.html"><span class="mono-mark" aria-hidden="true">MN</span><span class="brand-name">Mahteb Negussie</span></a>
+    <nav class="nav" aria-label="Main">
+      <a href="index.html#about" class="hide-sm">About</a>
+      <a href="index.html#projects" aria-current="page">Projects</a>
+      <a href="index.html#engineering" class="hide-sm">Engineering</a>
+      <a href="index.html#contact">Contact</a>
+      <button class="theme-btn" type="button" aria-label="Switch light or dark theme">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+      </button>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="cs-hero">
+    <div class="wrap">
+      <a class="back" href="index.html#projects">← All projects</a>
+      <span class="eyebrow">Case study · Product &amp; business</span>
+      <h1>QuickBite</h1>
+      <p class="lede">Pre-order your campus lunch. Collect it when your break starts. A campus food pre-order app with a restaurant dashboard for live orders, demand forecasts and food-waste tracking.</p>
+      <dl class="cs-meta">
+        <div><dt>Course</dt><dd>BUS 2403 Innovation &amp; Entrepreneurship, HCT</dd></div>
+        <div><dt>Team</dt><dd>Mahteb Negussie, Robera Bushura, Amanuel Alebachew</dd></div>
+        <div><dt>When</dt><dd>Fall semester 2026</dd></div>
+        <div><dt>Output</dt><dd>Working web prototype, business plan, 5-year cash-flow model, pitch</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <div class="wrap cs-wide">
+    <figure class="fig"><img src="img/qb-student.webp" alt="QuickBite student app: home screen with break plan, marketplace, AI Picks and order history" width="1400" height="743"></figure>
+  </div>
+
+  <div class="wrap">
+    <!-- 01 PROBLEM -->
+    <div class="cs-section cs-cols" style="margin-top:64px">
+      <div><span class="num">01</span><h2>The problem</h2></div>
+      <div>
+        <div class="prose">
+          <p>Breaks at HCT Sharjah are short, and the lunch queue eats most of them. We surveyed <strong>46 students</strong>: <strong>33 of them (71.7%)</strong> said they struggle to buy lunch in their break. The biggest reasons were waiting for food to be prepared, meal prices and too little time between classes.</p>
+          <p>It's a problem we live ourselves. Nobody knows what is ready, or when — so students queue, or skip lunch.</p>
+        </div>
+        <figure class="fig" style="margin-top:20px"><img src="img/qb-survey.webp" alt="Bar chart of main difficulties arranging lunch on campus: waiting for food preparation 21, meal prices 20, limited time between classes 16, uncertain food readiness 12, dietary options 12, waiting to order or pay 9" width="1400" height="735" loading="lazy"><figcaption>QuickBite campus lunch survey, n = 46, Sep–Oct 2026. Students could choose more than one difficulty.</figcaption></figure>
+      </div>
+    </div>
+
+    <!-- 02 CUSTOMER -->
+    <div class="cs-section cs-cols">
+      <div><span class="num">02</span><h2>Who it's for</h2></div>
+      <div>
+        <div class="prose">
+          <p>Our target customer is a student with a break of 30 minutes or less who is on campus at lunch three or more days a week. We validated the persona with the survey and <strong>five interviews</strong>.</p>
+        </div>
+        <div class="stats three">
+          <div class="stat"><div class="n">218,000</div><div class="l">UAE higher-education students (TAM)</div></div>
+          <div class="stat"><div class="n">43,214</div><div class="l">students at campuses in our 5-year plan (SAM)</div></div>
+          <div class="stat"><div class="n accent">15,031</div><div class="l">target students: short breaks, on campus 3+ days a week</div></div>
+        </div>
+        <p class="src">Sources: Ministry of Higher Education via WAM (2026); HCT Open Data (2026); QuickBite survey.</p>
+      </div>
+    </div>
+
+    <!-- 03 SOLUTION -->
+    <div class="cs-section cs-cols">
+      <div><span class="num">03</span><h2>The solution</h2></div>
+      <div>
+        <div class="prose"><p>Students order during class from their own cafeteria and collect the moment their break starts — at the menu price.</p></div>
+        <ol class="steps">
+          <li><strong>Plan.</strong> A break plan built from the timetable, plus AI Picks for diet, allergies and budget.</li>
+          <li><strong>Order &amp; pay.</strong> Choose a 15-minute pickup slot matched to the outlet's real capacity.</li>
+          <li><strong>Prepare.</strong> Outlets see live orders and a prep plan from the demand forecast.</li>
+          <li><strong>Collect.</strong> At the counter, a pickup station with a one-time code, or by runner between buildings (AED 3).</li>
+          <li><strong>After.</strong> Ratings, Green Points for reusable containers, weekly payouts to outlets.</li>
+          <li><strong>Measure.</strong> Outlets log food waste in kg against their own baseline.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- 04 PROTOTYPE -->
+    <div class="cs-section cs-cols">
+      <div><span class="num">04</span><h2>The prototype</h2></div>
+      <div>
+        <div class="prose">
+          <p>We built a <strong>working web prototype</strong>, not a mock-up: a student app and a restaurant dashboard. The forecast tells an outlet how many orders to expect each hour, so it prepares the right amount.</p>
+          <p>Feedback from the survey, interviews and the Week 7 Marketplace changed the plan: start with <strong>four outlets at one campus</strong>, and rename the product to QuickBite.</p>
+        </div>
+        <div class="two-figs">
+          <figure class="fig"><img src="img/qb-forecast.webp" alt="Restaurant dashboard showing an hourly demand forecast" width="1400" height="875" loading="lazy"><figcaption>Restaurant dashboard — hourly demand forecast.</figcaption></figure>
+          <figure class="fig"><img src="img/qb-orders.webp" alt="Restaurant dashboard showing live incoming orders" width="1400" height="875" loading="lazy"><figcaption>Restaurant dashboard — live orders.</figcaption></figure>
+        </div>
+      </div>
+    </div>
+
+    <!-- 05 COMPETITION -->
+    <div class="cs-section cs-cols">
+      <div><span class="num">05</span><h2>Why it wins</h2></div>
+      <div>
+        <div class="table-scroll">
+          <table class="cmp">
+            <thead><tr><th></th><th>QuickBite</th><th>Delivery apps</th><th>Queue / skip lunch</th></tr></thead>
+            <tbody>
+              <tr><td>Ready when your break starts</td><td class="us">Yes — slots match timetable</td><td>No</td><td>No</td></tr>
+              <tr><td>Cost to the student</td><td class="us">Menu price; AED 3 delivery</td><td>AED 5–9 delivery + service fees</td><td>Free, but costs time</td></tr>
+              <tr><td>Commission to outlet</td><td class="us">15%</td><td>20–30%</td><td>—</td></tr>
+              <tr><td>On campus</td><td class="us">Stations, QR lockers, outlet data</td><td>Off-campus delivery</td><td>—</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="src">Delivery apps compared: talabat, Keeta, Careem, Deliveroo, noon, EatEasy. Sources: talabat (n.d.); Khaleej Times (2026); EatEasy (2026).</p>
+      </div>
+    </div>
+
+    <!-- 06 BUSINESS -->
+    <div class="cs-section cs-cols">
+      <div><span class="num">06</span><h2>Business model</h2></div>
+      <div>
+        <div class="stats">
+          <div class="stat"><div class="n accent">15%</div><div class="l">commission from outlets</div></div>
+          <div class="stat"><div class="n">AED 99</div><div class="l">AI analytics per outlet / month</div></div>
+          <div class="stat"><div class="n">AED 3</div><div class="l">cross-building delivery</div></div>
+          <div class="stat"><div class="n">AED 5</div><div class="l">student premium / month</div></div>
+        </div>
+        <h3 style="margin-top:36px">Revenue, 5-year plan (AED)</h3>
+        <div class="bars" role="img" aria-label="Revenue: Year 1 19,287; Year 2 226,809; Year 3 328,578; Year 4 505,406; Year 5 631,645 AED">
+          <div class="bar"><span class="y">Y1 2027</span><div class="track"><div class="fill" style="width:3.05%"></div></div><span class="v">19,287</span></div>
+          <div class="bar"><span class="y">Y2</span><div class="track"><div class="fill" style="width:35.9%"></div></div><span class="v">226,809</span></div>
+          <div class="bar"><span class="y">Y3</span><div class="track"><div class="fill" style="width:52.0%"></div></div><span class="v">328,578</span></div>
+          <div class="bar"><span class="y">Y4</span><div class="track"><div class="fill" style="width:80.0%"></div></div><span class="v">505,406</span></div>
+          <div class="bar"><span class="y">Y5</span><div class="track"><div class="fill" style="width:100%"></div></div><span class="v">631,645</span></div>
+        </div>
+        <div class="stats three" style="margin-top:28px">
+          <div class="stat"><div class="n">Year 2</div><div class="l">break-even: first profitable year</div></div>
+          <div class="stat"><div class="n">AED 120,352</div><div class="l">Year 5 profit (19.1%), after founder pay</div></div>
+          <div class="stat"><div class="n">AED 80,000</div><div class="l">funding: AED 30,000 founders + AED 50,000 interest-free family loan</div></div>
+        </div>
+        <p class="src">Source: QuickBite 5-year cash-flow model. Projections, not results.</p>
+      </div>
+    </div>
+
+    <!-- 07 LEARNED -->
+    <div class="cs-section cs-cols">
+      <div><span class="num">07</span><h2>What's next</h2></div>
+      <div class="prose">
+        <p>The plan is a production app with real payments on iOS and Android from <strong>January 2027</strong>, a pilot at HCT Sharjah with pickup stations in the activity centres, and three HCT campuses live by September 2027.</p>
+        <p>Impact is measured inside the app itself: a target of 90% of orders ready on time, food waste in kg per day against each outlet's baseline, and the share of orders with a reusable box.</p>
+      </div>
+    </div>
+
+    <div class="next-cta" style="margin:24px 0 88px">
+      <p>Next: power systems and computer vision projects.</p>
+      <a class="btn primary" href="index.html#engineering">Engineering projects →</a>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="year">2026</span> Mahteb Negussie</span>
+    <a href="index.html#contact">Contact</a>
+  </div>
+</footer>
+</body>
+</html>
